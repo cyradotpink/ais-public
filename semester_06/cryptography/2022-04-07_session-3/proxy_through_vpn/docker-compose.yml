@@ -1,0 +1,17 @@
+services:
+  nginx:
+    build:
+      context:
+        ./nginx
+      args:
+        vpn_user: ${VPN_USER}
+        vpn_pass: ${VPN_PASS}
+    restart: always
+    ports:
+      - 8084:80
+    devices:
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN               
+      - SYS_MODULE              
+

@@ -1,0 +1,114 @@
+
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>Blockchain-Übung</title>
+            <style>
+              body        { font-family: monospace; }
+            </style>
+          </head>
+          <body style='font-family="monospace"'>
+          <table>
+            <tr>
+              <td><b>Zufall</b></td>
+              <td><b>Name</b></td>
+              <td><b>Hash</b></td>
+              <td><b>Zeit</b></td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>Genesis-Block</td>
+              <td>c1562929d20914e611fcca51aad1d77c3f34f6d684a8fb6ef01d885e98af0948</td>
+              <td>04.04.2022 09:00</td>
+            </tr>
+
+            <tr>
+              <td>30</td>
+              <td>Prof</td>
+              <td>0546d945b2ffc940c26e97a770aea34e8afdd0b35e18ff36ccfbc6780d23eb03</td>
+              <td>04.04.2022 09:07</td>
+            </tr>
+
+            <tr>
+              <td>1262893293</td>
+              <td>Prof</td>
+              <td>000497e5e8f14e6c8c31c16781b25daa154df1638cf41f77da0066f779907155</td>
+              <td>04.04.2022 09:07</td>
+            </tr>
+
+            <tr>
+              <td>58335716882688</td>
+              <td>AndreMartens</td>
+              <td>0001e838165c41adf44d758b2ce17388a95f8a2fb7997a53d9b5667343e38f49</td>
+              <td>07.04.2022 10:34</td>
+            </tr>
+
+            <tr>
+              <td>76000999649215</td>
+              <td>FilipMaas</td>
+              <td>00008283222591720685f4b5b0bbb593ea335934d468fa7511c3b684af3b193f</td>
+              <td>07.04.2022 10:36</td>
+            </tr>
+
+            <tr>
+              <td>16899617584608</td>
+              <td>DanielIsaak</td>
+              <td>000014c9bc5ec052daa56c13b69c23fddfbbc8022a640d5acfbab013116e4af7</td>
+              <td>07.04.2022 10:36</td>
+            </tr>
+
+            <tr>
+              <td>74224641787831</td>
+              <td>Goodluck</td>
+              <td>000004f243aa198b585a378c208e2bc5bb04ddf089e5605725875fe0981d7c0c</td>
+              <td>07.04.2022 10:39</td>
+            </tr>
+
+            <tr>
+              <td>152479221</td>
+              <td>AzimGuener</td>
+              <td>000001180fc496be99f444b53446b3ad6c295f7767d0a4a1d1be9a10ac15aef5</td>
+              <td>07.04.2022 10:41</td>
+            </tr>
+
+            <tr>
+              <td>783328129</td>
+              <td>HendrikHoewing</td>
+              <td>00000079049d3e9a2ebdb3dc80a63d3339137ff631fc0a3afea96d62923a43fb</td>
+              <td>07.04.2022 10:50</td>
+            </tr>
+
+            <tr>
+              <td>1771550796</td>
+              <td>Prof</td>
+              <td>00000000751afc45531920752b4f61cb6dfb06e8e874d1e3130c4aee4050f4b6</td>
+              <td>07.04.2022 11:12</td>
+            </tr>
+
+            <tr>
+              <td>13234792617</td>
+              <td>KevinJaroschewski</td>
+              <td>0000000005d3202751be683060fdfbb55e5d652380113008eea6b32bfe16d722</td>
+              <td>12.04.2022 15:29</td>
+            </tr>
+
+            <form method="get" action="validate">
+                <tr>
+                <td><input type="text" value="" name="zufall" /></td>
+                <td><input type="text" value="" name="name" /></td>
+                <td>Hash wird automatisch berechnet.</td>
+                </tr>
+              </table>
+              <button type="submit">Hinzufügen</button>
+            </form>
+          <br><br><br><br>
+          Hinweis: Der nächste Hash-Wert muss immer mindestens um den Faktor 2 kleiner sein als der vorhergehende. <br>
+          Hashberechnung: SHA256(Zufall || letzer Hash || Name)
+          <br><br>
+          Beispiel: <br>
+          echo -n "30c1562929d20914e611fcca51aad1d77c3f34f6d684a8fb6ef01d885e98af0948Prof" | sha256sum <br>
+          0546d945b2ffc940c26e97a770aea34e8afdd0b35e18ff36ccfbc6780d23eb03  -
+          <br><br>
+          Erlaubt sind nur alphanumerische Zeichen.
+          </body>
+        </html>

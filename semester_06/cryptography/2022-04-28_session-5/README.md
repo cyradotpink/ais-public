@@ -10,12 +10,12 @@ und einen kommandozeilen-basierten HOTP Validator.
 Eine kompilierte Linux x86-64 Binary kann von [hier](exercise_2/assets/hotp_linux_x86-64?raw=true) heruntergeladen werden.\
 Zum selbst kompilieren ist es ausreichend, `cargo build --release` auszuführen.
 
-### Kommandozeilen-Argumente
+### Kommandozeilen-Paramater
 
-Das Programm kann mit Kommandozeilen-Parametern ausgeführt werden, um es zu konfigurieren. Valide Schreibweisen zum
-Konfigurieren des HOTP-Wert-Länge sind beispielweise `--length=6` und `-l6`.
+Das Programm kann mit Kommandozeilen-Argumenten ausgeführt werden, um es zu konfigurieren. Valide Schreibweisen zum
+Konfigurieren der HOTP-Wert-Länge sind beispielweise `--length=6` und `-l6`.
 
-Die folgenden Argumente werden angenommen. Unbekannte Parameter-Namen/Kurzformen werden ignoriert, ungültige Werte führen zur Ausgabe eines Fehlers und zum Ausführungsabbruch.
+Die folgenden Parameter werden akzeptiert. Unbekannte Parameter-Namen/Kurzformen werden ignoriert, ungültige Werte führen zur Ausgabe eines Fehlers und zum Ausführungsabbruch.
 
 | Name      | Kurzform | Beschreibung                                         | Default               |
 | :-------- | :------- | :--------------------------------------------------- | :-------------------- |
